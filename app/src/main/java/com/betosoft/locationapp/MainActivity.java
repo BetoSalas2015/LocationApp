@@ -74,7 +74,7 @@ public class MainActivity extends Activity implements LocationListener {
         super.onResume();
         StringBuffer stringBuffer = new StringBuffer();
         Criteria criteria = new Criteria();
-        criteria.setAccuracy(Criteria.ACCURACY_COARSE);
+        criteria.setAccuracy(Criteria.ACCURACY_FINE);
         enabledProviders = locationManager.getProviders(criteria, true);
 
         if(enabledProviders.isEmpty())
